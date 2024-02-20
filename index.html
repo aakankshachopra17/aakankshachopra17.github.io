@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Button Options</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        h1 {
-            color: #333;
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-
-        p {
-            color: #666;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
         }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
+        .button:hover {
+            background-color: #36b300;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Hello!</h1>
-    <p>I am Aakanksha.</p>
+
+<div class="button-container">
+    <button class="button" onclick="window.location.href='https://www.paypal.com/paypalme/AakankshaChopra'">Chat with Aakanksha</button>
+    <button class="button" onclick="window.location.href='https://www.paypal.com/paypalme/AakankshaChopra'">Chat with Ashwani</button>
+    <button class="button" onclick="window.location.href='https://www.paypal.com/paypalme/AakankshaChopra'">Chat with Bhavya</button>
+    <button class="button" onclick="window.location.href='https://www.paypal.com/paypalme/AakankshaChopra'">Chat with Rishika</button>
 </div>
+
 </body>
 </html>
